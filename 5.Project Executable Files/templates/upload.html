@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upload Seedling Image</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='upload.css') }}">
+</head>
+<body>
+    <header>
+        <h1>Upload a Seedling Image for Prediction</h1>
+    </header>
+    <div class="content">
+        <form action="/predict" method="POST" enctype="multipart/form-data">
+            <input type="file" name="img" required>
+            <button type="submit" class="button">Upload and Predict</button>
+        </form>
+    </div>
+    <a href="/" class="button back">Back to Home</a>
+</body>
+</html>
