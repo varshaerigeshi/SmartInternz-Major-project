@@ -1,0 +1,138 @@
+/* Global Reset and Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(to right, #6a11cb, #2575fc); /* Gradient from purple to blue */
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; /* Ensure elements stack vertically */
+    height: 100vh;
+    padding: 20px;
+    text-align: center;
+    overflow: hidden; /* Prevent overflow on smaller screens */
+}
+
+/* Header Styling */
+header {
+    background-color: #FF6347; /* Tomato red background */
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    border-radius: 10px 10px 0 0;
+    margin-bottom: 40px;
+}
+
+h1 {
+    font-size: 48px;
+    color: white;
+    font-weight: bold;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Content Section */
+.container {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+    max-width: 700px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/* Main Text */
+h2 {
+    font-size: 26px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+p {
+    font-size: 22px;
+    color: #333;
+    font-weight: 300;
+    margin-bottom: 30px;
+    line-height: 1.8;
+    font-family: 'Arial', sans-serif;
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Form & Input Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 20px;
+}
+
+input[type="file"] {
+    margin-bottom: 20px;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 8px;
+    border: 1px solid #ddd;
+}
+
+/* Button Styling */
+button, a.button {
+    background-color: #28a745; /* Green button */
+    color: white;
+    border: none;
+    padding: 14px 28px;
+    font-size: 18px;
+    text-decoration: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-block;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    margin-top: 20px;
+}
+
+button:hover, a.button:hover {
+    background-color: #218838;
+    transform: scale(1.05); /* Button enlargement on hover */
+}
+
+a.button {
+    background-color: #007bff;
+    text-decoration: none;
+}
+
+a.button:hover {
+    background-color: #0056b3;
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 22px;
+    }
+
+    p {
+        font-size: 18px;
+        padding: 15px;
+    }
+
+    .container {
+        padding: 30px;
+        margin: 20px;
+    }
+
+    button, a.button {
+        font-size: 16px;
+        padding: 12px 24px;
+    }
+}
